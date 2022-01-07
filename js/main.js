@@ -99,7 +99,7 @@ cells.forEach(cell => cell.addEventListener('click', () => {
 
         // If the last character of historyExpr is '=', then remove it to avoid errors
         if(historyExpr[historyExpr.length - 1] === "="){
-            historyExpr = historyExpr.slice(0, historyExpr.length - 1);
+            historyExpr += historyExpr.slice(0, historyExpr.length - 1);
         }
 
         mainExpr = historyExpr + resultExpr;
