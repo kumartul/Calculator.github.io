@@ -1,0 +1,32 @@
+@mixin hamburger-line {
+    width: 2rem;
+    height: 1px;
+    
+    background-color: black;
+}
+
+@mixin flex-row {
+    display: flex;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+@mixin content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin response-box-padding {
+    padding: 0.25rem;
+    padding-right: 1rem;
+}
