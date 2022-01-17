@@ -15,9 +15,7 @@ html{
 body{
     height: 100vh;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include content-center;
 }
 
 // Prevent FOIT (Flashes of invisible text)
