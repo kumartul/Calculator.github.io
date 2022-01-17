@@ -29,33 +29,35 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./public/icons/favicon.png">
-
-    <!-- Fontawesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style/main.css" type = "text/css">
-
+    
     <!-- Custom JS -->
     <script src="./js/main.js" defer></script>
 </head>
 <body>
-
+    
     <!-- Main Container -->
     <div class="container">
-
+        
         <!-- Header -->
         <div class="header">
-
+            
             <!-- Hamburger -->
             <div class="hamburger" role="menu" aria-disabled="true">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-
+            
             <!-- Type of Calculator -->
             <h2>Standard</h2>
+            
+            <!-- Importing the library through the CDN just before rendering the icon so that the first 
+                 contentful paint doesn't gets delayed -->
+            <!-- Fontawesome CDN -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
             <!-- View History Button -->
             <div class="view-history">
@@ -64,7 +66,7 @@
                 </button>
             </div>
         </div>
-
+        
         <!-- History -->
         <div class="history"></div>
 
