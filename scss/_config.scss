@@ -21,3 +21,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+// Prevent FOIT (Flashes of invisible text)
+@font-face {
+    font-family: 'Cambria';
+    src: local('Cambria');
+    font-display: swap;
+}
